@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singampalli Maheshbabu - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .skill-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        .typing-animation {
+            border-right: 2px solid #fff;
+            animation: typing 3s infinite;
+        }
+        @keyframes typing {
+            0%, 50% { border-color: transparent; }
+            51%, 100% { border-color: #fff; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-xl font-bold text-gray-800">Maheshbabu</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#skills" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Skills</a>
+                        <a href="#projects" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
+                        <a href="#education" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Education</a>
+                        <a href="#experience" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Experience</a>
+                        <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600 p-2">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-blue-600">About</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Skills</a>
+                <a href="#projects" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Projects</a>
+                <a href="#education" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Education</a>
+                <a href="#experience" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Experience</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center justify-center pt-16">
+        <div class="text-center text-white px-4">
+            <div class="w-32 h-32 bg-white rounded-full mx-auto mb-8 flex items-center justify-center shadow-lg">
+                <i class="fas fa-user text-4xl text-gray-600"></i>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Singampalli Maheshbabu</h1>
+            <h2 class="text-xl md:text-2xl mb-6 typing-animation">Full Stack Developer & AI Enthusiast</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Passionate Computer Science Engineering student specializing in MERN stack development and Artificial Intelligence</p>
+            <div class="space-x-4">
+                <a href="https://page.gensparksite.com/get_upload_url/13b6de7bfa7a0f270146cae8462cccd00af885f805b3d37af29d4057ad64e3de/default/be3b3a81-12a4-4317-805f-9e1d13087acc" 
+                   class="inline-block bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-download mr-2"></i>Download Resume
+                </a>
+                <a href="#contact" class="inline-block border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                    <i class="fas fa-envelope mr-2"></i>Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Hello! I'm Maheshbabu</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        I am a passionate Computer Science Engineering student at Gayatri Vidya Parishad College with a strong foundation in full-stack development and artificial intelligence. Currently pursuing my B.Tech with an excellent CGPA of 8.9/10, I am dedicated to creating innovative solutions that make a positive impact.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        My journey in technology has been marked by continuous learning and hands-on experience through various internships and projects. I specialize in MERN stack development and have a keen interest in AI/ML technologies. I believe in the power of technology to solve real-world problems and am always eager to take on new challenges.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Personal Details</h4>
+                            <p class="text-gray-600 text-sm"><strong>Email:</strong> singampallimaheshbabu@gmail.com</p>
+                            <p class="text-gray-600 text-sm"><strong>Phone:</strong> +91 9553745716</p>
+                            <p class="text-gray-600 text-sm"><strong>Location:</strong> Visakhapatnam, India</p>
+                            <p class="text-gray-600 text-sm"><strong>Languages:</strong> English, Telugu, Hindi</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Strengths</h4>
+                            <ul class="text-gray-600 text-sm space-y-1">
+                                <li>• Hardworking & Understanding</li>
+                                <li>• Leadership & Organization</li>
+                                <li>• Solution-oriented Communication</li>
+                                <li>• Quick Learner & Energetic</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg p-8 text-white">
+                        <h3 class="text-2xl font-semibold mb-4">Career Objective</h3>
+                        <p class="leading-relaxed">
+                            To secure a challenging position in a reputed organization where I can efficiently contribute my knowledge and interpersonal skills for the growth of the organization while continuously learning and developing my technical expertise.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Technical Skills</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-center">
+                        <i class="fas fa-code text-4xl text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-4">Programming Languages</h3>
+                        <div class="space-y-2">
+                            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">C & C++</span>
+                            <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="inline-block bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Java</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-center">
+                        <i class="fas fa-laptop-code text-4xl text-green-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-4">Web Development</h3>
+                        <div class="space-y-2">
+                            <span class="inline-block bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">HTML & CSS</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React.js</span>
+                            <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">MERN Stack</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-center">
+                        <i class="fas fa-database text-4xl text-purple-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-4">Database & Tools</h3>
+                        <div class="space-y-2">
+                            <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">SQL</span>
+                            <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                            <span class="inline-block bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Firebase</span>
+                            <span class="inline-block bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">MS Office</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-robot text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">AI ChatBox</h3>
+                        <p class="text-gray-600 mb-4">An intelligent chatbot application built with modern web technologies including React, TypeScript, and Tailwind CSS with Vite for optimal performance.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">React</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">TypeScript</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Tailwind CSS</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Vite</span>
+                        </div>
+                        <a href="https://github.com/Maheshbabu14344p94/AI-that-cares.git" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
+                            <i class="fab fa-github mr-2"></i>View Code
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-green-500 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-user-graduate text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Student Management System</h3>
+                        <p class="text-gray-600 mb-4">A comprehensive system for managing student records with weather API integration, built using Python backend with HTML/CSS frontend and SQL database.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Python</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">HTML/CSS</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">SQL</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">APIs</span>
+                        </div>
+                        <a href="https://github.com/Maheshbabu14344p94/student-management.git" target="_blank" class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors">
+                            <i class="fab fa-github mr-2"></i>View Code
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center">
+                        <i class="fas fa-car text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Vehicle Inspection System</h3>
+                        <p class="text-gray-600 mb-4">A web-based vehicle inspection application designed to streamline the inspection process with an intuitive user interface built with HTML and CSS.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">HTML</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">CSS</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/Maheshbabu14344p94/Vehicle-Inspection-main.git" target="_blank" class="inline-block bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition-colors">
+                            <i class="fab fa-github mr-2"></i>View Code
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center">
+                        <i class="fas fa-briefcase text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Career Management System</h3>
+                        <p class="text-gray-600 mb-4">A comprehensive career guidance application with Firebase integration for real-time data management and user authentication.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">HTML/CSS</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">JavaScript</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">Firebase</span>
+                        </div>
+                        <a href="https://github.com/Maheshbabu14344p94/career-guidance-app.git" target="_blank" class="inline-block bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700 transition-colors">
+                            <i class="fab fa-github mr-2"></i>View Code
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-teal-500 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-bus text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">E-Bus Management System</h3>
+                        <p class="text-gray-600 mb-4">A complete bus management solution with Firebase Studio integration and MongoDB for efficient data storage and retrieval.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-teal-100 text-teal-800 px-2 py-1 rounded text-xs">HTML/CSS</span>
+                            <span class="bg-teal-100 text-teal-800 px-2 py-1 rounded text-xs">JavaScript</span>
+                            <span class="bg-teal-100 text-teal-800 px-2 py-1 rounded text-xs">Firebase</span>
+                            <span class="bg-teal-100 text-teal-800 px-2 py-1 rounded text-xs">MongoDB</span>
+                        </div>
+                        <a href="https://github.com/Maheshbabu14344p94/ebus-management.git" target="_blank" class="inline-block bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 transition-colors">
+                            <i class="fab fa-github mr-2"></i>View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Education</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="space-y-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-graduation-cap text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Bachelor of Technology in Computer Science Engineering</h3>
+                            <p class="text-gray-600">Gayatri Vidya Parishad College For Degree and P.G Courses (Autonomous)</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-600">Year of Passing</p>
+                            <p class="text-lg font-semibold">2026</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-600">CGPA</p>
+                            <p class="text-lg font-semibold">8.9/10</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-600">Status</p>
+                            <p class="text-lg font-semibold">Pursuing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-school text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Intermediate (12th Grade)</h3>
+                            <p class="text-gray-600">Sarvepalli Junior College</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-600">Year of Passing</p>
+                            <p class="text-lg font-semibold">2022</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-600">Percentage</p>
+                            <p class="text-lg font-semibold">88.7%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-book text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Secondary School Certificate (10th Grade)</h3>
+                            <p class="text-gray-600">A.M.A.A High School</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-600">Year of Passing</p>
+                            <p class="text-lg font-semibold">2020</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <p class="text-sm text-gray-600">Percentage</p>
+                            <p class="text-lg font-semibold">96%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Experience & Achievements</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <!-- Internships -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-8 text-center">Internships</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-cloud text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-2">AI Azure Intern</h4>
+                        <p class="text-gray-600 mb-2">AICTE Edunet under Microsoft</p>
+                        <p class="text-sm text-gray-500">1 Month • Online</p>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-code text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-2">Full Stack Web Developer</h4>
+                        <p class="text-gray-600 mb-2">Unified Mentor</p>
+                        <p class="text-sm text-gray-500">2 Months • Online</p>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-laptop-code text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold mb-2">Full Stack MERN Developer</h4>
+                        <p class="text-gray-600 mb-2">Tiny Data Technology</p>
+                        <p class="text-sm text-gray-500">3 Months • Offline</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-8 text-center">Certifications</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-blue-600">
+                        <i class="fab fa-java text-2xl text-blue-600 mb-2"></i>
+                        <h4 class="font-semibold text-sm">Java Programming</h4>
+                        <p class="text-xs text-gray-600">NPTEL</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-red-600">
+                        <i class="fas fa-brain text-2xl text-red-600 mb-2"></i>
+                        <h4 class="font-semibold text-sm">AI with Python</h4>
+                        <p class="text-xs text-gray-600">HarvardX</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-green-600">
+                        <i class="fas fa-cloud text-2xl text-green-600 mb-2"></i>
+                        <h4 class="font-semibold text-sm">Cloud Computing</h4>
+                        <p class="text-xs text-gray-600">IBM</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-yellow-600">
+                        <i class="fab fa-aws text-2xl text-yellow-600 mb-2"></i>
+                        <h4 class="font-semibold text-sm">ML on AWS</h4>
+                        <p class="text-xs text-gray-600">AWS</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-purple-600">
+                        <i class="fab fa-google text-2xl text-purple-600 mb-2"></i>
+                        <h4 class="font-semibold text-sm">Google AI</h4>
+                        <p class="text-xs text-gray-600">Google</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-indigo-600">
+                        <i class="fas fa-robot text-2xl text-indigo-600 mb-2"></i>
+                        <h4 class="font-semibold text-sm">Generative AI</h4>
+                        <p class="text-xs text-gray-600">IBM</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-pink-600">
+                        <i class="fas fa-cogs text-2xl text-pink-600 mb-2"></i>
+                        <h4 class="font-semibold text-sm">LLM Operations</h4>
+                        <p class="text-xs text-gray-600">IBM</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-teal-600">
+                        <i class="fas fa-chart-line text-2xl text-teal-600 mb-2"></i>
+                        <h4 class="font-semibold text-sm">Data Science</h4>
+                        <p class="text-xs text-gray-600">Infosys</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events & Competitions -->
+            <div>
+                <h3 class="text-2xl font-semibold text-gray-900 mb-8 text-center">Events & Competitions</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-r from-blue-500 to-purple-600 p-6 rounded-lg text-white">
+                        <i class="fas fa-trophy text-2xl mb-4"></i>
+                        <h4 class="font-semibold mb-2">Smart India Hackathon 2024</h4>
+                        <p class="text-sm">Participated in college-level SIH for healthcare queuing models</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-green-500 to-blue-600 p-6 rounded-lg text-white">
+                        <i class="fas fa-code text-2xl mb-4"></i>
+                        <h4 class="font-semibold mb-2">ANITS Code-IT Contest 2023</h4>
+                        <p class="text-sm">Competitive programming contest participation</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-orange-500 to-red-600 p-6 rounded-lg text-white">
+                        <i class="fas fa-laptop-code text-2xl mb-4"></i>
+                        <h4 class="font-semibold mb-2">Full Stack Web Development Workshop</h4>
+                        <p class="text-sm">2-Day intensive workshop on modern web technologies</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-purple-500 to-pink-600 p-6 rounded-lg text-white">
+                        <i class="fas fa-brain text-2xl mb-4"></i>
+                        <h4 class="font-semibold mb-2">AI & LLM Workshop</h4>
+                        <p class="text-sm">Advanced workshop on Large Language Models</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4">Ready to start your next project? Let's work together!</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <p class="text-gray-600">singampallimaheshbabu@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Phone</p>
+                                <p class="text-gray-600">+91 9553745716</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Location</p>
+                                <p class="text-gray-600">Visakhapatnam, Andhra Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/Maheshbabu14344p94" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-gray-700 transition-colors">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:singampallimaheshbabu@gmail.com" class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-colors">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+919553745716" class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white hover:bg-green-700 transition-colors">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Send Message</h3>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                            <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Your Name">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                            <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="your.email@example.com">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">&copy; 2024 Singampalli Maheshbabu. All rights reserved.</p>
+                <p class="text-gray-400 mt-2">Built with ❤️ using HTML & Tailwind CSS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form submission
+        const contactForm = document.querySelector('form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
